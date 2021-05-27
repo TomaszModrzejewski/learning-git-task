@@ -24,5 +24,3 @@ print(five)
 print()
 five_to_the_third = [i**3 for i in five]
 print(five_to_the_third)
-
-# Conected with GitHub

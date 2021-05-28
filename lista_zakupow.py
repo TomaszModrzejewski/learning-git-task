@@ -2,7 +2,7 @@ print("Shopping list")
 shopping_dict = {
       "Bakery": ["bread", "donut", "rolls"],
       "Vegetables store": ["carrots", "celery", "arugula"]
-
+      
 }
 
 shopping_count = 0
@@ -12,8 +12,7 @@ text_a = "In total, I buy {} products."
 for shop in shopping_dict:
     store = text.format(shop.capitalize())
     for article in shopping_dict[shop]:
-        store += "{},".format(article.capitalize())
-        store = store[:-2] + "."
+        store += "," + article.capitalize()  
     print(store)                                                             
     shopping_count += len(shopping_dict[shop])
 print(text_a.format(shopping_count))

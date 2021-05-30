@@ -1,9 +1,12 @@
-def isPalindrome(s):
-    return s == s[::-1]
+def Palindrome(s):
+    rev = ''.join(reversed(s))
+    if (s == rev):
+        return True
+    return False
 
-s = "malayalam"
-ans = isPalindrome(s)
-if ans:
+s = "kajxak"
+ans = Palindrome(s)
+if (ans):
     print("Yes")
 else:
     print("No")
